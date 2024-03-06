@@ -1,3 +1,17 @@
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
+'''
 import dash
 import dash_core_components as dcc
 import dash_html_components as html
@@ -871,3 +885,4 @@ def update_graph(select_year, radio_items):
 
 if __name__ == '__main__':
     app.run_server(debug=True)
+'''
