@@ -71,4 +71,4 @@ df = pd.DataFrame(information_for_dataframe)
 print(df.head())
 
 pd.set_option('display.max_columns', None)
-print(df.head(3))
+print(df.head(5))
