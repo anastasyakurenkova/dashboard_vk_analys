@@ -117,7 +117,7 @@ app.layout = html.Div([
             style={'background-color': '#39344a', 'padding': '20px', 'border-radius': '5px', 'grid-column': 'span 3',
                    'display': 'flex', 'flex-direction': 'column'}),
 
-
+        #Какие-то еще метрики
         html.Div([
             html.H6("Random Text Container 1", style={'color': '#FFFFFF', 'fontWeight': 'bold'}),
             html.P(text1)
@@ -151,17 +151,6 @@ app.layout = html.Div([
             )
         ], id='age',
             style={'grid-column': 'span 3', 'padding': '10px', 'border-radius': '5px', 'background-color': '#39344a'}),
-
-        #какие-то еще метрики???
-        html.Div([
-            html.H6("Random Text Container 1", style={'color': '#FFFFFF', 'fontWeight': 'bold'}),
-            html.P(
-                text1,
-                style={'color': '#FFFFFF'})
-        ], className='text-container',
-            style={'background-color': '#333333', 'padding': '20px', 'border-radius': '5px', 'grid-column': 'span 8'}),
-
-    ], style={'display': 'grid', 'grid-template-columns': 'repeat(12, 1fr)', 'gap': '20px', 'padding': '5%'})
 
 ])
 
@@ -501,7 +490,7 @@ def update_graph(selected_option):
     elif selected_option == '2':
         updated_photo2 = photo2
         return [
-            html.P('ARR сообщества',
+            html.P('Самый популярный пост',
                     style={'color': '#f9f9f9',
                            'font-size': '24px',
                            'font-weight': 'bold',
